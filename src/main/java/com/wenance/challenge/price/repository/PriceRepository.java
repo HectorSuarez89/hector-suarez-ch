@@ -6,9 +6,11 @@ import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @Repository
-public interface PriceRepository extends JpaRepository<Double, Price> {
-    Price findByTime(LocalDateTime localDateTime);
-    List<Price> findByTimeBetween(LocalDateTime from, LocalDateTime until);
+public interface PriceRepository extends JpaRepository<Price, Integer> {
+    Optional<Price> findByTime(LocalDateTime localDateTime);
+    Optional<List<Price>> findByTimeBetween(LocalDateTime from, LocalDateTime until);
 }

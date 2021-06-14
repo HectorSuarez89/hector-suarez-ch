@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 public class PriceDTO {
     LocalDateTime from;
     LocalDateTime until;
-    float averangeValue;
-    float maxValueStored;
-    float percentageDiff;
+    double averangeValue;
+    double maxValueStored;
+    double percentageDiff;
 }
