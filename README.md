@@ -3,7 +3,7 @@ This microservice makes a call every 10 seconds to: https://cex.io/api/last_pric
 Furthermore allows you to get the price at a timestamp. </br>
 Also allows to obtain the average price and the percentage difference between the average price and the maximum value obtained in the consulted interval.
 
-##Getting Started
+## Getting Started  </br> 
 1 - Clone this project ``git clone https://github.com/HectorSuarez89/hector-suarez-ch.git`` </br> 
 2 - Go to folder of project and execute ``mvn package`` </br>
 3 - Execute project with: ``java -jar target/challenge-0.0.1-SNAPSHOT.jar`` </br>
